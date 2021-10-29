@@ -1,0 +1,460 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*INDEX*/
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body header {
+  position: fixed;
+  top: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  -webkit-box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+body header h2 {
+  color: #7d60f5;
+  margin-left: 30px;
+  font-size: 30px;
+  width: 20%;
+}
+
+body header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  font-size: 21px;
+  margin-left: 100px;
+  font-weight: 600;
+}
+
+body header nav li {
+  list-style: none;
+  margin-right: 30px;
+  padding-top: 10px;
+}
+
+body header nav li a {
+  text-decoration: none;
+  color: #7d60f5;
+}
+
+body header nav li a:hover {
+  color: #3a268a;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+body main div {
+  width: 50%;
+}
+
+body main div h2 {
+  font-size: 70px;
+  margin-left: 90px;
+  margin-top: 30px;
+  color: #1f1447;
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+body main img {
+  width: 55%;
+}
+
+body .section1 {
+  background-color: #7d60f5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: 550px;
+}
+
+body .section1 img {
+  width: 50%;
+}
+
+body .section1 div {
+  width: 50%;
+  padding-top: 30px;
+  margin-right: 30px;
+}
+
+body .section1 div h3 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+body .section1 div p {
+  padding-top: 20px;
+  color: white;
+  font-size: 23px;
+  text-align: center;
+}
+
+body .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: #1f1447;
+  margin-top: 80px;
+  width: 100%;
+}
+
+body .section2 .contenido {
+  width: 50%;
+}
+
+body .section2 .contenido .contenedor-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .section2 .contenido .contenedor-boton .boton {
+  font-size: 25px;
+  background-color: #7d60f5;
+  border-radius: 40px;
+  margin-top: 20px;
+  padding: 5px 20px 5px 20px;
+  font-weight: 550;
+}
+
+body .section2 .contenido .contenedor-boton .boton a {
+  color: white;
+}
+
+body footer {
+  background-color: black;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body footer div {
+  padding: 30px;
+  font-weight: 600;
+}
+
+body footer div .titulo-footer {
+  color: #7d60f5;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+body footer div p {
+  color: white;
+}
+
+body footer div h4 {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+body footer div li {
+  list-style: none;
+}
+
+body footer div li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*PORTAFOLIO*/
+.titulo-portafolio {
+  color: #1f1447;
+  margin-top: 70px;
+  font-size: 80px;
+  text-align: center;
+  padding: 20px;
+}
+
+.portafolio {
+  margin-left: 60px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portafolio .trabajo {
+  margin: 10px;
+  width: 30%;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.portafolio .trabajo:hover {
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.portafolio .trabajo img {
+  width: 100%;
+}
+
+.portafolio .trabajo p {
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.portafolio .trabajo .contenedor-ver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portafolio .trabajo .contenedor-ver div {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 0px 20px;
+  font-size: 20px;
+  width: 10%;
+  background-color: #7d60f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*CONTACTO*/
+.body-contacto {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.body-contacto .section-contacto {
+  margin-top: 150px;
+  width: 100%;
+}
+
+.body-contacto .section-contacto .contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.body-contacto .section-contacto .contacto .imagen img {
+  width: 200px;
+  padding-top: 80px;
+}
+
+.body-contacto .section-contacto .contacto .formulario {
+  width: 50%;
+}
+
+.body-contacto .section-contacto .contacto .formulario h3 {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.body-contacto .section-contacto .contacto .formulario .form-floating {
+  margin-bottom: 20px;
+}
+
+.body-contacto .section-contacto .contacto .formulario input[type="submit"] {
+  background-color: #7d60f5;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 20px;
+  -webkit-box-shadow: 0px;
+          box-shadow: 0px;
+  -webkit-transform: translateX(280px);
+          transform: translateX(280px);
+}
+
+/*NOSOTROS*/
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px 250px 30px 250px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nosotros p {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.clientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clientes .cliente {
+  padding: 0px 100px 0px 100px;
+  width: 30%;
+}
+
+.clientes .cliente div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clientes .cliente div img {
+  width: 50%;
+}
+
+.clientes .cliente .testimonio {
+  font-size: 20px;
+}
+
+/*QUE OFRECEMOS*/
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body .main-que-ofrecemos {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #7d60f5;
+}
+
+body .main-que-ofrecemos img {
+  width: 35%;
+}
+
+body .main-que-ofrecemos h2 {
+  color: white;
+  font-size: 110px;
+  padding-top: 60px;
+}
+
+body .ofertas {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .oferta {
+  text-align: center;
+  width: 20%;
+  margin: 30px 50px;
+}
+
+body .oferta img {
+  width: 20%;
+}
+
+body .oferta p {
+  font-size: 20px;
+  width: 100%;
+  color: #888888;
+  font-weight: 600;
+}
+
+body .oferta h3 {
+  margin: 5px;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-index img {
+    display: none;
+  }
+  .section1 img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
