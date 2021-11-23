@@ -5,18 +5,196 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-img{
+
+body{
     width: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px 5px 3px rgba(0,0,0,.1);
+        color: rgba(125,96,245,1);
+        padding-top: 2px;
+        #btn-menu{
+            display: none;
+        }
+
+        #btn-menu:checked ~ nav{
+            margin: 0px;
+            color:rgb(58, 38, 138);
+        }
+        label{
+            display: none;
+            margin: 10px;
+            width: 30px;
+            &:hover{
+                color:rgb(58, 38, 138);
+                cursor: pointer;
+            }
+        }
+        .logo{
+            width: 30%;
+            p{
+                color: rgba(125,96,245,1);
+                margin-left: 30px;
+                margin-top: 5px;
+                font-size: 23px;
+                font-weight: 700;
+            }
+        }
+        nav{
+                width: 60%;
+                display: flex;
+                flex-direction: row;
+                margin-left: 70px;
+                li{
+                    list-style: none;
+                    margin: 10px;
+                    margin-left: 35px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    a{
+                        text-decoration: none;
+                        color: rgba(125,96,245,1);
+                        &:hover{
+                            color:rgb(58, 38, 138);
+                        }
+                    }
+                }
+        }
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        div{
+            width: 50%;
+            h2{
+                font-size: 95px;
+                margin-left: 30px;
+                color: rgb(31, 20, 71);
+                padding-top: 0px;
+                padding-left: 60px;
+            }
+        }
+        .imagen{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .section1{
+        background-color: rgba(125,96,245,1);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom:50px;;
+        .img-section1{
+            img{
+                width: 100%;
+                padding-left: 30px;
+            }
+        }
+        div{
+            width: 50%;
+            padding-top: 30px;
+            padding-right: 30px;
+            h3{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #fff;
+                font-size: 60px;
+                text-align: center;
+                font-weight: 600;
+            }
+            p{
+                padding-top: 20px;
+                color: white;
+                font-size: 23px;
+                text-align: center;
+            }
+        }
+    }
+    .section2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 70px;
+        color: rgb(31, 20, 71);
+        margin-top: 80px;
+        .contenido{
+            width: 60%;
+            h3{
+                text-align: center;
+            }
+            .contenedor-boton{
+                display: flex;
+                justify-content: center;
+                .boton{
+                    font-size: 25px;
+                    background-color: rgba(125,96,245,1);
+                    border-radius: 40px;
+                    margin-top: 20px;
+                    padding: 5px 20px 5px 20px;
+                    font-weight: 550;
+                    box-shadow: 0px 5px 3px rgba(0,0,0,.2);
+                    a{
+                        color:white;
+                    }
+                    &:hover{
+                        box-shadow: 0px 5px 3px rgba(0,0,0,.3);
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        background-color: black;
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-around;
+        div{
+            padding: 30px;
+            font-weight: 500;
+            .titulo-footer{
+                color:rgba(125,96,245,1);
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            p{
+                color:white
+            }
+            h4{
+                font-size: 30px;
+                padding: 30px;
+                color:white
+            }
+            li{
+                list-style: none;
+                a{
+                    color:white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
 }
-
-
-
-/*MEDIA QUERIES*/
 
 /*MEDIA QUERIES SECCION 1*/
 @media screen and (max-width: 1200px) {
     .section1{
         div{
+            h3{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
             p{
                 display: none;
             }
@@ -104,6 +282,7 @@ img{
 
 @media screen and (max-width: 1240px) {
     .main-index{
+        margin-top: 70px;
         div{
             h2{
                 font-size: 70px;
@@ -256,250 +435,6 @@ img{
     }
 }
 
-
-
-body{
-    width: 100%;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 16px;
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        box-shadow: 0px 5px 3px rgba(0,0,0,.1);
-        color: rgba(125,96,245,1);
-        padding-top: 2px;
-        #btn-menu{
-            display: none;
-        }
-
-        #btn-menu:checked ~ nav{
-            margin: 0px;
-        }
-
-        label{
-            display: none;
-            margin: 10px;
-            width: 30px;
-        }
-        .logo{
-            width: 30%;
-            p{
-                color: rgba(125,96,245,1);
-                margin-left: 30px;
-                margin-top: 5px;
-                font-size: 23px;
-                font-weight: 700;
-            }
-        }
-        nav{
-                width: 60%;
-                display: flex;
-                flex-direction: row;
-                margin-left: 70px;
-                li{
-                    list-style: none;
-                    margin: 10px;
-                    margin-left: 35px;
-                    font-size: 20px;
-                    font-weight: 600;
-                    a{
-                        text-decoration: none;
-                        color: rgba(125,96,245,1);
-                        &:hover{
-                            color:rgb(58, 38, 138);
-                        }
-                    }
-                }
-        }
-    }
-    /*
-    .main-index{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        div{
-            font-size: 60px;
-            padding-left: 50px;
-            color: rgb(31, 20, 71);
-        }
-        .imagen{
-            img{
-                width: 100%;
-            }
-        }
-    }
-    */
-
-    
-    /*
-    header{
-        width: 100%;
-        position: fixed;
-        top:-10px;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: white;
-        padding: 16px;
-        box-shadow: 0px 5px 3px rgba(0,0,0,.1);
-        z-index: 1;
-      .logo{
-          width: 30%;
-        h2{
-            color: rgba(125,96,245,1);
-            margin-left: 30px;
-            font-size: 30px;
-            width: 20%;
-          }
-      }
-      .nav{
-          width: 60%;
-        nav{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            font-size: 21px;
-            font-weight: 600;
-            li{
-                list-style: none;
-                margin-right: 30px;
-                padding-top: 10px;
-                a{
-                  width: 100%;
-                  text-decoration: none;
-                  color: rgba(125,96,245,1);
-                  &:hover{
-                      color:rgb(58, 38, 138) ;
-                  }
-              }
-            }
-        }
-      }
-    }
-    
-    */
-    main{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        div{
-            width: 50%;
-            h2{
-                font-size: 95px;
-                margin-left: 30px;
-                color: rgb(31, 20, 71);
-                padding-top: 0px;
-                padding-left: 60px;
-            }
-        }
-        .imagen{
-            width: 50%;
-            img{
-                width: 100%;
-            }
-        }
-    }
-    .section1{
-        background-color: rgba(125,96,245,1);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom:50px;;
-        .img-section1{
-            img{
-                width: 100%;
-                padding-left: 30px;
-            }
-        }
-        div{
-            width: 50%;
-            padding-top: 30px;
-            padding-right: 30px;
-            h3{
-                color: #fff;
-                font-size: 60px;
-                text-align: center;
-                font-weight: 600;
-            }
-            p{
-                padding-top: 20px;
-                color: white;
-                font-size: 23px;
-                text-align: center;
-            }
-        }
-    }
-    .section2{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 70px;
-        color: rgb(31, 20, 71);
-        margin-top: 80px;
-        .contenido{
-            width: 60%;
-            h3{
-                text-align: center;
-            }
-            .contenedor-boton{
-                display: flex;
-                justify-content: center;
-                .boton{
-                    font-size: 25px;
-                    background-color: rgba(125,96,245,1);
-                    border-radius: 40px;
-                    margin-top: 20px;
-                    padding: 5px 20px 5px 20px;
-                    font-weight: 550;
-                    box-shadow: 0px 5px 3px rgba(0,0,0,.2);
-                    a{
-                        color:white;
-                    }
-                    &:hover{
-                        box-shadow: 0px 5px 3px rgba(0,0,0,.3);
-                    }
-                }
-            }
-        }
-    }
-    footer{
-        width: 100%;
-        background-color: black;
-        margin-top: 120px;
-        display: flex;
-        justify-content: space-around;
-        div{
-            padding: 30px;
-            font-weight: 500;
-            .titulo-footer{
-                color:rgba(125,96,245,1);
-                font-weight: 600;
-                margin-bottom: 10px;
-            }
-            p{
-                color:white
-            }
-            h4{
-                font-size: 30px;
-                padding: 30px;
-                color:white
-            }
-            li{
-                list-style: none;
-                a{
-                    color:white;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    
-}
-
 /*PORTAFOLIO*/
 .titulo-portafolio{
     color: rgb(31, 20, 71);
@@ -554,6 +489,9 @@ a{
 }
 
 @media screen and (max-width: 1000px) {
+    .titulo-portafolio{
+        padding-top: 50px;
+    }
    .portafolio{
         margin-left: 1%;
    }
@@ -655,6 +593,7 @@ a{
 
 @media screen and (max-width: 800px) {
     .body-contacto{
+        padding-top: 30px;
         .section-contacto{
             .contacto{
                 .imagen{
@@ -765,25 +704,25 @@ a{
  /*.nosotros*/
 @media screen and (max-width: 1000px) {
     .nosotros{
-        margin: 40px 150px 30px 150px;
+        margin: 70px 150px 30px 150px;
     }
 }
 
 @media screen and (max-width: 800px) {
     .nosotros{
-        margin: 40px 100px 30px 100px;
+        margin: 70px 100px 30px 100px;
     }
 }
 
 @media screen and (max-width: 650px) {
     .nosotros{
-        margin: 40px 50px 30px 50px;
+        margin: 70px 50px 30px 50px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .nosotros{
-        margin: 40px 20px 30px 20px;
+        margin: 70px 20px 30px 20px;
     }
 }
 
@@ -816,7 +755,7 @@ a{
     .main-que-ofrecemos{
         padding-top: 0px;
         padding-bottom: 40px;
-        margin-top: 40px;
+        padding-top: 40px;
         display: flex;
         justify-content: space-around;
         background-color: rgb(255, 255, 255);
@@ -1035,9 +974,13 @@ a{
 @media screen and (max-width: 1080px) {
     body{
         header{
+            background-color: #fff;
+            width: 100%;
+            top:0%;
+            z-index: 1;
+            position: fixed;
             #btn-menu{
                 display: none;
-
             }
             label{
                 display: block;
@@ -1057,7 +1000,7 @@ a{
                 background-color: white;
                 flex-direction: column;
                 left: 0;
-                top: 60px;
+                top: 49px;
                 box-shadow: 0px 5px 3px rgba(0,0,0,.1);
                 transition: 0.5s ease;
                 li{
@@ -1067,9 +1010,15 @@ a{
                     margin: 0px;
                     padding: 10px;
                     border-bottom: 1px solid #fff;
+                    &:hover{
+                        background-color: rgb(104, 82, 192);
+                    }
                     a{
                         color: #fff;
                         padding-left: 30px;
+                        width: 100%;
+                        display: block;
+                        text-decoration: none;
                     }
                 }
             }    
