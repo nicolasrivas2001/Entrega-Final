@@ -13,10 +13,14 @@
 </head>
 <body class="body-contacto">
     <header>
-        <h2>boomer</h2>
+        <input type="checkbox" name="boton" id="btn-menu">
+        <label for="btn-menu"><img src="btn-menu.png" alt=""></label>
+        <div class="logo">
+            <p>boomer</p>
+        </div>
         <nav>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="que-ofrecemos.html">Que ofrecemos</a></li>
+            <li><a href="que-ofrecemos.html">Ofrecemos</a></li>
             <li><a href="portafolio.html">Portafolio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -30,15 +34,15 @@
             <form class="formulario">
                 <h3>Comunicate con nosotros, podemos ayudarte.</h3>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre" required>
                         <label for="floatingInput">Nombre</label>
                     </div>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Apellido">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Apellido" required>
                         <label for="floatingInput">Apellido</label>
                       </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -49,7 +53,9 @@
                         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Contanos tu idea</label>
                     </div>
-                    <input type="submit" value="Enviar">
+                    <div class="enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
             </form>
         </div>
     </div>
@@ -58,7 +64,7 @@
             <h4>boomer</h4>
         </div>
         <div class="footer-menu">
-            <p class="titulo-footer">Menu</p>
+            <p class="titulo-footer">Menú</p>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
